@@ -13,9 +13,7 @@ public abstract class Decimal {
         String decimal;
         int dec=0;
         for(int i=start, j=0; i<=3; i++,j++){
-            int num= (int) sub.charAt(j);
-            num-=48;
-            if(num==1){
+            if(sub.charAt(j)=='1'){
                 dec+=binary[i];
             }
         }
